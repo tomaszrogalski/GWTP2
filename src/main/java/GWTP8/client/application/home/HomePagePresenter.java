@@ -78,7 +78,9 @@ public class HomePagePresenter extends Presenter<HomePagePresenter.MyView, HomeP
 				PlaceRequest responsePlaceRequest = new PlaceRequest.Builder().nameToken(NameTokens.second)
 						.with("name", getView().getFirstBox().getText()).build();
 				// moge zmienic widocznosc w url, sprawdzic
+		
 				placeManager.revealPlace(responsePlaceRequest);
+				placeManager.setOnLeaveConfirmation("Do you really want to leave?");
 			}
 		});
 	}
