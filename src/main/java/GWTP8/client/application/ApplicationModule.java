@@ -13,11 +13,13 @@ import GWTP8.client.application.whynot.WhyNotModule;
 import GWTP8.client.application.stronastartowa.StronaStartowaModule;
 import GWTP8.client.application.bot.BotModule;
 import GWTP8.client.application.top.topModule;
+import GWTP8.client.application.odpowiedz.OdpowiedzModule;
 
 public class ApplicationModule extends AbstractPresenterModule {
 	@Override
 	protected void configure() {
 
+		install(new OdpowiedzModule());
 		install(new topModule());
 		install(new BotModule());
 		install(new StronaStartowaModule());

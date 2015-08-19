@@ -2,6 +2,8 @@ package GWTP8.client.gin;
 
 import GWTP8.client.application.ApplicationModule;
 import GWTP8.client.place.NameTokens;
+
+import com.gwtplatform.dispatch.rpc.client.gin.RpcDispatchAsyncModule;
 import com.gwtplatform.mvp.client.annotations.DefaultPlace;
 import com.gwtplatform.mvp.client.annotations.ErrorPlace;
 import com.gwtplatform.mvp.client.annotations.UnauthorizedPlace;
@@ -17,6 +19,7 @@ public class ClientModule extends AbstractPresenterModule {
     protected void configure() {
         install(new DefaultModule());
         install(new ApplicationModule());
+        install(new RpcDispatchAsyncModule());
 
         // DefaultPlaceManager Places
         bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.home);

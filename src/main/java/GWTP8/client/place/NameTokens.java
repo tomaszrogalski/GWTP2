@@ -1,6 +1,8 @@
 package GWTP8.client.place;
 
 public class NameTokens {
+	public static final String odpowiedz = "odpowiedz";
+
 	public static final String stronaStartowa = "stronaStartowa";
 
 	public static final String test2 = "test2";
@@ -15,6 +17,11 @@ public class NameTokens {
 
 	public static final String home = "!home";
 
+	public static final String bot = "bot";
+
+	public static String getBot() {
+		return bot;
+	}
 	public static String getHome() {
 		return home;
 	}
@@ -41,6 +48,10 @@ public class NameTokens {
 
 	public static String getStronaStartowa() {
 		return stronaStartowa;
+	}
+
+	public static String getOdpowiedz() {
+		return odpowiedz;
 	}
 
 }

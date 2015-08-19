@@ -1,22 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <module rename-to='Project'>
-    <!-- Inherit the core Web Toolkit stuff. -->
-    <inherits name='com.google.gwt.user.User' />
-    <inherits name='com.google.gwt.inject.Inject' />
+	<!-- Inherit the core Web Toolkit stuff. -->
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name='com.google.gwt.inject.Inject' />
+	<define-configuration-property name="gin.ginjector"
+		is-multi-valued="false" />
+	<set-configuration-property name="gin.ginjector"
+		value="au.org.uptick.mygwtpapp.client.gin.MyGinjector" />
+	<!-- Default css -->
+	<inherits name='com.google.gwt.user.theme.standard.Standard' />
+	<!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+	<!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/> -->
 
-    <!-- Default css -->
-    <inherits name='com.google.gwt.user.theme.standard.Standard' />
-    <!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
-    <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/> -->
+	<!-- Other module inherits -->
+	<inherits name='com.gwtplatform.dispatch.Dispatch' />
 
-    <!-- Other module inherits -->
-    <inherits name='com.gwtplatform.dispatch.Dispatch' />
-    
-    <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint' />
+	<inherits name='com.gwtplatform.mvp.MvpWithEntryPoint' />
 
-    <source path='client' />
-    <source path='shared' />
+	<source path='client' />
+	<source path='shared' />
 
-    <set-configuration-property name="gin.ginjector.modules" 
-                                value="GWTP8.client.gin.ClientModule"/>
+	<set-configuration-property name="gin.ginjector.modules"
+		value="GWTP8.client.gin.ClientModule" />
 </module>
