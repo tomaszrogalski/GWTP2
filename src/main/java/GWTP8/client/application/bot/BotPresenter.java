@@ -78,7 +78,6 @@ public class BotPresenter extends Presenter<BotPresenter.MyView, BotPresenter.My
 		
 		PlaceRequest responsePlaceRequest = new PlaceRequest.Builder()
                 .nameToken(NameTokens.odpowiedz)
-                .with("textToServer", "dupa")
                 .build();
         placeManager.revealPlace(responsePlaceRequest);	
 	}

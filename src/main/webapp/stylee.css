@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+.top {
+
+    background-color:black;
+} 
+.left {
+
+    background-color:red;
+} 
+.center {
+
+    background-color:blue;
+} 
+.right {
+
+    background-color:green;
+} 
+.bot {
+
+    background-color:orange;
+} 
